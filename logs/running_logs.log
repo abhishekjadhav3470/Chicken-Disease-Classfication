@@ -1,0 +1,40 @@
+[2023-10-04 18:24:43,032: INFO: main: >>>>> stage Data Ingestion stage started <<<<<<]
+[2023-10-04 18:24:43,037: INFO: common: yaml file: config\config.yaml loaded suceessfully]
+[2023-10-04 18:24:43,042: INFO: common: yaml file: params.yaml loaded suceessfully]
+[2023-10-04 18:24:43,042: INFO: common: created directory at: artifacts]
+[2023-10-04 18:24:43,042: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-04 18:24:43,042: INFO: data_ingestion: File already exists of size : ~ 11345 KB]
+[2023-10-04 18:24:43,215: INFO: main:  >>>>>>> stage Data Ingestion stage completed <<<<< 
+
+x========x]
+[2023-10-04 18:24:43,215: INFO: main: >>>>> stage Prepare Base Model started <<<<<<]
+[2023-10-04 18:24:43,215: INFO: common: yaml file: config\config.yaml loaded suceessfully]
+[2023-10-04 18:24:43,227: INFO: common: yaml file: params.yaml loaded suceessfully]
+[2023-10-04 18:24:43,227: INFO: common: created directory at: artifacts]
+[2023-10-04 18:24:43,227: ERROR: main: 'ConfigurationManager' object has no attribute 'root_dir']
+Traceback (most recent call last):
+  File "D:\Chicken-Disease-Classfication-Projects\main.py", line 18, in <module>
+    obj.main()
+  File "D:\Chicken-Disease-Classfication-Projects\src\cnnClassifier\pipeline\stage_02_prepare_base_model.py", line 14, in main
+    prepare_base_model_config = config.get_prepare_base_model_config()
+  File "D:\Chicken-Disease-Classfication-Projects\src\cnnClassifier\config\configuration.py", line 35, in get_prepare_base_model_config
+    create_directories([self.root_dir])
+AttributeError: 'ConfigurationManager' object has no attribute 'root_dir'
+[2023-10-04 18:25:55,965: INFO: main: >>>>> stage Data Ingestion stage started <<<<<<]
+[2023-10-04 18:25:55,965: INFO: common: yaml file: config\config.yaml loaded suceessfully]
+[2023-10-04 18:25:55,965: INFO: common: yaml file: params.yaml loaded suceessfully]
+[2023-10-04 18:25:55,965: INFO: common: created directory at: artifacts]
+[2023-10-04 18:25:55,965: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-04 18:25:55,965: INFO: data_ingestion: File already exists of size : ~ 11345 KB]
+[2023-10-04 18:25:56,106: INFO: main:  >>>>>>> stage Data Ingestion stage completed <<<<< 
+
+x========x]
+[2023-10-04 18:25:56,106: INFO: main: >>>>> stage Prepare Base Model started <<<<<<]
+[2023-10-04 18:25:56,121: INFO: common: yaml file: config\config.yaml loaded suceessfully]
+[2023-10-04 18:25:56,121: INFO: common: yaml file: params.yaml loaded suceessfully]
+[2023-10-04 18:25:56,121: INFO: common: created directory at: artifacts]
+[2023-10-04 18:25:56,121: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-10-04 18:25:56,506: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-10-04 18:25:56,681: INFO: main:  >>>>>>> stage Prepare Base Model completed <<<<< 
+
+x========x]
